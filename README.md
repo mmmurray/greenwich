@@ -17,5 +17,10 @@ npm i greenwich
 ## Usage
 
 ```ts
-import { timeParse, timeAdd } from 'greenwich';
+import { timeNow, timeSpanCreate, timeToISOString } from 'greenwich';
+
+const t0 = timeNow();
+const t1 = timeAdd(t0, timeSpanCreate({ days: 10 }));
+
+console.log(timeToISOString(t1));
 ```

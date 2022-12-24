@@ -1,6 +1,6 @@
 {
   "name": "greenwich",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript date and time utility library.",
   "author": "Mark Murray",
   "license": "MIT",

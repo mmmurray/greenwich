@@ -3,6 +3,7 @@ export * from './aggregate';
 export * from './compare';
 export * from './difference';
 export * from './format';
+export * from './now';
 export * from './parse';
 export * from './time';
 export * from './truncate';
