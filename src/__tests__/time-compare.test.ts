@@ -1,6 +1,6 @@
-import { timeCompare, timeCreate, timeEqual, timeToISOString } from '..';
+import { timeCompare, timeCreate, timeEqual, timeToISOString } from "..";
 
-test('can compare time equality', () => {
+test("can compare time equality", () => {
   const t1 = timeCreate({
     year: 1993,
     month: 1,
@@ -35,7 +35,7 @@ test('can compare time equality', () => {
   expect(timeEqual(t1, t3)).toEqual(false);
 });
 
-test('can compare times', () => {
+test("can compare times", () => {
   const sorted = [
     timeCreate({ year: 2000 }),
     timeCreate({ year: 1993 }),
@@ -45,8 +45,8 @@ test('can compare times', () => {
     .map(timeToISOString);
 
   expect(sorted).toEqual([
-    '1993-01-01T00:00:00.000Z',
-    '1997-01-01T00:00:00.000Z',
-    '2000-01-01T00:00:00.000Z',
+    "1993-01-01T00:00:00.000Z",
+    "1997-01-01T00:00:00.000Z",
+    "2000-01-01T00:00:00.000Z",
   ]);
 });

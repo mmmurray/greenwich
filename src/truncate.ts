@@ -1,5 +1,5 @@
-import { timeCreate } from './time';
-import { Time } from './types';
+import { timeCreate } from "./time";
+import { Time } from "./types";
 
 export const timeTruncateToYear = (t: Time): Time => {
   return timeCreate({ year: t.year });

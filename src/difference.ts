@@ -1,6 +1,6 @@
-import { timeToDate } from './date';
-import { timeTruncateToDay } from './truncate';
-import { Time } from './types';
+import { timeToDate } from "./date";
+import { timeTruncateToDay } from "./truncate";
+import { Time } from "./types";
 
 const convertMillisecondsToDays = (milliseconds: number): number => {
   return Math.floor(milliseconds / 1000 / 60 / 60 / 24);

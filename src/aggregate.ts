@@ -1,9 +1,9 @@
-import { timeAdd } from './add';
-import { timeCompare, timeEqual } from './compare';
-import { timeDifferenceInDays } from './difference';
-import { timeSpanCreate } from './time';
-import { timeTruncateToDay, timeTruncateToMonth } from './truncate';
-import { Time } from './types';
+import { timeAdd } from "./add";
+import { timeCompare, timeEqual } from "./compare";
+import { timeDifferenceInDays } from "./difference";
+import { timeSpanCreate } from "./time";
+import { timeTruncateToDay, timeTruncateToMonth } from "./truncate";
+import { Time } from "./types";
 
 type Aggregation<T> = { time: Time; data: T[] }[];
 

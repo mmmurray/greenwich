@@ -1,4 +1,4 @@
-import { Time, TimeSpan } from './types';
+import { Time, TimeSpan } from "./types";
 
 export const timeCreate = (overrides: Partial<Time>): Time => {
   return {

@@ -1,4 +1,4 @@
-import { Time } from './types';
+import { Time } from "./types";
 
 export const timeToDate = (time: Time): Date => {
   const timestamp = Date.UTC(
@@ -8,7 +8,7 @@ export const timeToDate = (time: Time): Date => {
     time.hour,
     time.minute,
     time.second,
-    time.millisecond,
+    time.millisecond
   );
 
   return new Date(timestamp);
