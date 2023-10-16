@@ -1,5 +1,5 @@
-import { timeToDate } from './date';
-import { Time } from './types';
+import { timeToDate } from "./date";
+import { Time } from "./types";
 
 export const timeEqual = (t1: Time, t2: Time): boolean => {
   return (

@@ -1,5 +1,5 @@
-import { dateToTime, timeToDate } from './date';
-import { Time, TimeSpan } from './types';
+import { dateToTime, timeToDate } from "./date";
+import { Time, TimeSpan } from "./types";
 
 export const timeAdd = (time: Time, timeSpan: TimeSpan): Time => {
   const date = timeToDate(time);

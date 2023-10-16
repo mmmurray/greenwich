@@ -7,7 +7,7 @@ import {
   timeMonth,
   timeSecond,
   timeYear,
-} from '..';
+} from "..";
 
 const time = timeCreate({
   year: 2022,
@@ -19,30 +19,30 @@ const time = timeCreate({
   millisecond: 123,
 });
 
-test('can get year', () => {
+test("can get year", () => {
   expect(timeYear(time)).toEqual(2022);
 });
 
-test('can get month', () => {
+test("can get month", () => {
   expect(timeMonth(time)).toEqual(4);
 });
 
-test('can get day', () => {
+test("can get day", () => {
   expect(timeDay(time)).toEqual(12);
 });
 
-test('can get hour', () => {
+test("can get hour", () => {
   expect(timeHour(time)).toEqual(3);
 });
 
-test('can get minute', () => {
+test("can get minute", () => {
   expect(timeMinute(time)).toEqual(22);
 });
 
-test('can get second', () => {
+test("can get second", () => {
   expect(timeSecond(time)).toEqual(55);
 });
 
-test('can get milisecond', () => {
+test("can get milisecond", () => {
   expect(timeMillisecond(time)).toEqual(123);
 });

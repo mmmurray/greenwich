@@ -7,7 +7,7 @@ import {
   timeTruncateToMonth,
   timeTruncateToSecond,
   timeTruncateToYear,
-} from '..';
+} from "..";
 
 const t1 = timeCreate({
   year: 1993,
@@ -19,38 +19,38 @@ const t1 = timeCreate({
   millisecond: 123,
 });
 
-test('can truncate time to year', () => {
+test("can truncate time to year", () => {
   const t2 = timeTruncateToYear(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-01-01T00:00:00.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-01-01T00:00:00.000Z");
 });
 
-test('can truncate time to month', () => {
+test("can truncate time to month", () => {
   const t2 = timeTruncateToMonth(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-10-01T00:00:00.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-10-01T00:00:00.000Z");
 });
 
-test('can truncate time to day', () => {
+test("can truncate time to day", () => {
   const t2 = timeTruncateToDay(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-10-22T00:00:00.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-10-22T00:00:00.000Z");
 });
 
-test('can truncate time to hour', () => {
+test("can truncate time to hour", () => {
   const t2 = timeTruncateToHour(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-10-22T07:00:00.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-10-22T07:00:00.000Z");
 });
 
-test('can truncate time to minute', () => {
+test("can truncate time to minute", () => {
   const t2 = timeTruncateToMinute(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-10-22T07:22:00.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-10-22T07:22:00.000Z");
 });
 
-test('can truncate time to second', () => {
+test("can truncate time to second", () => {
   const t2 = timeTruncateToSecond(t1);
 
-  expect(timeToISOString(t2)).toEqual('1993-10-22T07:22:13.000Z');
+  expect(timeToISOString(t2)).toEqual("1993-10-22T07:22:13.000Z");
 });

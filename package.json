@@ -1,9 +1,9 @@
 {
   "name": "greenwich",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript date and time utility library.",
   "author": "Mark Murray",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": "git@github.com:mmmurray/greenwich.git",
   "keywords": [
     "time",
